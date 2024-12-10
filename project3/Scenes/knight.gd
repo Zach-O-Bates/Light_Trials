@@ -66,11 +66,11 @@ func handle_animation():
 		await get_tree().create_timer(0.8).timeout
 		taking_damage = false
 	elif !dead and !taking_damage and is_dealing_damage:
-		if anim_sprite.animation != "Attack":  # Only play Attack if it's not already playing
+		if anim_sprite.animation != "Attack":  
 			anim_sprite.play("Attack")
-			print("Playing attack animation")  # Debug print to confirm attack is playing
-			await get_tree().create_timer(1.0).timeout  # Wait for the attack animation to complete
-			is_dealing_damage = false  # Reset flag after animation is done
+			print("Playing attack animation")  
+			await get_tree().create_timer(1.0).timeout 
+			is_dealing_damage = false 
 	elif dead and is_roaming:
 		is_roaming = false
 		anim_sprite.play('Death')
