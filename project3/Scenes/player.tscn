@@ -1,0 +1,504 @@
+[gd_scene load_steps=99 format=3 uid="uid://2qem4fk7ukij"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_7ohc3"]
+[ext_resource type="Texture2D" uid="uid://db4edq5tmkl1c" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/spritesheets/3x/dark-knight-idle.png" id="2_1myqj"]
+[ext_resource type="Texture2D" uid="uid://bdexocel2ny2e" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a1.png" id="2_hqaqt"]
+[ext_resource type="Texture2D" uid="uid://brkch748yhryu" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-falling/dark-knight-falling1.png" id="2_rvpf5"]
+[ext_resource type="Texture2D" uid="uid://1l5vbpibvjop" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a1.png" id="2_uybve"]
+[ext_resource type="Texture2D" uid="uid://cyumep6b5ue41" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/spritesheets/3x/dark-knight-jump.png" id="3_0f1cw"]
+[ext_resource type="Texture2D" uid="uid://cpao1il177yrl" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/spritesheets/3x/dark-knight-run.png" id="3_1dbd3"]
+[ext_resource type="Texture2D" uid="uid://cp3nngt4a505x" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a2.png" id="3_770sc"]
+[ext_resource type="Texture2D" uid="uid://d1avgmkgrsf24" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-falling/dark-knight-falling2.png" id="3_sdbcm"]
+[ext_resource type="Texture2D" uid="uid://gllagwegmgmr" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a2.png" id="3_vltcc"]
+[ext_resource type="Texture2D" uid="uid://ctrp1t5wd6oaw" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a3.png" id="4_08xdu"]
+[ext_resource type="Texture2D" uid="uid://cq3h6lq80qmo2" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-falling/dark-knight-falling3.png" id="4_ru1yl"]
+[ext_resource type="Texture2D" uid="uid://vuic6ypn3xqh" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a3.png" id="4_y0jie"]
+[ext_resource type="Texture2D" uid="uid://53huesprxkyy" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-falling/dark-knight-falling4.png" id="5_1fgkr"]
+[ext_resource type="Texture2D" uid="uid://dhrbag71bd55f" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a4.png" id="5_i2au3"]
+[ext_resource type="Texture2D" uid="uid://dler64adfnab6" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a4.png" id="5_qd6ur"]
+[ext_resource type="Texture2D" uid="uid://b4x7mqcq4t6uc" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a5.png" id="6_axg5q"]
+[ext_resource type="Texture2D" uid="uid://dkey8c3oehi7h" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a5.png" id="6_s04f5"]
+[ext_resource type="Texture2D" uid="uid://c72dqpiyyxq6v" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a6.png" id="7_5yhme"]
+[ext_resource type="Texture2D" uid="uid://bg28iwyt61bd0" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a6.png" id="7_fyam6"]
+[ext_resource type="Texture2D" uid="uid://dbnv6esr5ht7y" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a7.png" id="8_8eywj"]
+[ext_resource type="Texture2D" uid="uid://bc4q27t7yw74a" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a7.png" id="8_xwtu0"]
+[ext_resource type="Texture2D" uid="uid://7cnneu0c3dvd" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-air-combo-a/dark-knight-air-combo-a8.png" id="9_04brq"]
+[ext_resource type="Texture2D" uid="uid://bbgyrdv6171xj" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a8.png" id="9_5tse3"]
+[ext_resource type="Texture2D" uid="uid://c1bbp2biqdfi5" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a9.png" id="10_ljoc7"]
+[ext_resource type="Texture2D" uid="uid://x37bo7pxen0a" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-dead-ground/dark-knight-dead-ground1.png" id="10_sx1iw"]
+[ext_resource type="Texture2D" uid="uid://d0giyjb3e6vpx" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a10.png" id="11_bmt41"]
+[ext_resource type="Texture2D" uid="uid://nv7thd2ggdf2" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-dead-ground/dark-knight-dead-ground2.png" id="11_dfofw"]
+[ext_resource type="Texture2D" uid="uid://p7ccdiwkg8f4" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a11.png" id="12_jxfjo"]
+[ext_resource type="Texture2D" uid="uid://dyttlrsmrjyj0" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-dead-ground/dark-knight-dead-ground3.png" id="12_um8mm"]
+[ext_resource type="Texture2D" uid="uid://b775xpy5uwj3s" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-dead-ground/dark-knight-dead-ground4.png" id="13_orvpy"]
+[ext_resource type="Texture2D" uid="uid://b1dr6i5jkcqc3" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-heavy-combo-with-effect-a/dark-knight-heavy-combo-with-effect-a12.png" id="13_w78m4"]
+[ext_resource type="Texture2D" uid="uid://djx31daxeewmb" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-dead-ground/dark-knight-dead-ground5.png" id="14_dor1p"]
+[ext_resource type="Texture2D" uid="uid://djbakkvlqjwyo" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a1.png" id="16_quxut"]
+[ext_resource type="Texture2D" uid="uid://v0avdmmud1da" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a2.png" id="17_nb3ex"]
+[ext_resource type="Texture2D" uid="uid://fpq6b15ju84b" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a3.png" id="18_srrer"]
+[ext_resource type="Texture2D" uid="uid://bwmjgd4bxage0" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a4.png" id="19_6yxja"]
+[ext_resource type="Texture2D" uid="uid://cip37y1ox87qd" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a5.png" id="20_c5dp2"]
+[ext_resource type="Texture2D" uid="uid://hfsri7ivapd" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a6.png" id="21_48okd"]
+[ext_resource type="Texture2D" uid="uid://dyo1ickt2ksti" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a7.png" id="22_i57fd"]
+[ext_resource type="Texture2D" uid="uid://bidt2m4jynvg2" path="res://Characters/pixramen-valley-asset-pack-v2/dark-knight/png/3x/dark-knight-normal-combo-a/dark-knight-normal-combo-a8.png" id="23_b7q5c"]
+[ext_resource type="PackedScene" uid="uid://1kpcxwwo6a2r" path="res://Scenes/HealthBar.tscn" id="42_dww61"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sj5iy"]
+atlas = ExtResource("2_uybve")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w1vvt"]
+atlas = ExtResource("3_vltcc")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cg6g7"]
+atlas = ExtResource("4_y0jie")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nmqq"]
+atlas = ExtResource("5_qd6ur")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bb6l"]
+atlas = ExtResource("6_axg5q")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wdk0f"]
+atlas = ExtResource("7_5yhme")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_frnta"]
+atlas = ExtResource("8_8eywj")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gliag"]
+atlas = ExtResource("9_04brq")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sw6rj"]
+atlas = ExtResource("10_sx1iw")
+region = Rect2(0, 128, 168, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vaoni"]
+atlas = ExtResource("11_dfofw")
+region = Rect2(0, 128, 168, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjorp"]
+atlas = ExtResource("12_um8mm")
+region = Rect2(0, 128, 168, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwgmd"]
+atlas = ExtResource("13_orvpy")
+region = Rect2(0, 128, 168, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww1p5"]
+atlas = ExtResource("14_dor1p")
+region = Rect2(0, 128, 168, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cwe88"]
+atlas = ExtResource("2_rvpf5")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4sulv"]
+atlas = ExtResource("3_sdbcm")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwgqa"]
+atlas = ExtResource("4_ru1yl")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxjp6"]
+atlas = ExtResource("5_1fgkr")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e70kv"]
+atlas = ExtResource("2_hqaqt")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5y4p"]
+atlas = ExtResource("3_770sc")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_762f2"]
+atlas = ExtResource("4_08xdu")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnxex"]
+atlas = ExtResource("5_i2au3")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_suu3w"]
+atlas = ExtResource("6_s04f5")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xh7bo"]
+atlas = ExtResource("7_fyam6")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n83db"]
+atlas = ExtResource("8_xwtu0")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cr2pd"]
+atlas = ExtResource("9_5tse3")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fifd3"]
+atlas = ExtResource("10_ljoc7")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qdphy"]
+atlas = ExtResource("11_bmt41")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bp8wm"]
+atlas = ExtResource("12_jxfjo")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qng6"]
+atlas = ExtResource("13_w78m4")
+region = Rect2(268, 146, 134, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5wxmf"]
+atlas = ExtResource("2_1myqj")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wafjx"]
+atlas = ExtResource("2_1myqj")
+region = Rect2(192, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6g8ld"]
+atlas = ExtResource("3_0f1cw")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5s56"]
+atlas = ExtResource("3_0f1cw")
+region = Rect2(192, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ecod"]
+atlas = ExtResource("3_0f1cw")
+region = Rect2(384, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttupr"]
+atlas = ExtResource("3_0f1cw")
+region = Rect2(576, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_554vt"]
+atlas = ExtResource("3_0f1cw")
+region = Rect2(768, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ld3q6"]
+atlas = ExtResource("16_quxut")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkeck"]
+atlas = ExtResource("17_nb3ex")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m55gh"]
+atlas = ExtResource("18_srrer")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnuvh"]
+atlas = ExtResource("19_6yxja")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8861"]
+atlas = ExtResource("20_c5dp2")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5cept"]
+atlas = ExtResource("21_48okd")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1l40p"]
+atlas = ExtResource("22_i57fd")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_282y7"]
+atlas = ExtResource("23_b7q5c")
+region = Rect2(0, 82, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_miryu"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qrqp"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(192, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_40iwv"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(384, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kcce8"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(576, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1heqp"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(768, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8wx0"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(960, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ula7b"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(1152, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s07bs"]
+atlas = ExtResource("3_1dbd3")
+region = Rect2(1344, 128, 192, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grf22"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sj5iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w1vvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cg6g7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nmqq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bb6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wdk0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_frnta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gliag")
+}],
+"loop": false,
+"name": &"Air Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sw6rj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vaoni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjorp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwgmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ww1p5")
+}],
+"loop": true,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cwe88")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4sulv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwgqa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxjp6")
+}],
+"loop": true,
+"name": &"Falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e70kv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5y4p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_762f2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnxex")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_suu3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xh7bo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n83db")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cr2pd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fifd3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qdphy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bp8wm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qng6")
+}],
+"loop": false,
+"name": &"Heavy Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5wxmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wafjx")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6g8ld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5s56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ecod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttupr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_554vt")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ld3q6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkeck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m55gh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnuvh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8861")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5cept")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1l40p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_282y7")
+}],
+"loop": false,
+"name": &"Light Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_miryu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3qrqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_40iwv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kcce8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1heqp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8wx0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ula7b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s07bs")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lqf23"]
+radius = 7.0
+height = 40.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vugla"]
+radius = 14.0
+height = 60.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gdv1n"]
+radius = 13.0
+height = 54.0
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(45, 41)
+script = ExtResource("1_7ohc3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.999989, 0.999992)
+scale = Vector2(0.816406, 1.22487)
+sprite_frames = SubResource("SpriteFrames_grf22")
+animation = &"Idle"
+frame_progress = 0.310863
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-8, 13)
+shape = SubResource("CapsuleShape2D_lqf23")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, 0)
+zoom = Vector2(2, 2)
+
+[node name="DamageZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
+position = Vector2(19, 10)
+shape = SubResource("CapsuleShape2D_vugla")
+disabled = true
+
+[node name="PlayerHitBox" type="Area2D" parent="."]
+position = Vector2(-6, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHitBox"]
+position = Vector2(-1, 7)
+shape = SubResource("CapsuleShape2D_gdv1n")
+
+[node name="ProgressBar" parent="." instance=ExtResource("42_dww61")]
+offset_left = -61.0
+offset_top = 50.0
+offset_right = 54.0
+offset_bottom = 65.0
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

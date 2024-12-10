@@ -1,0 +1,362 @@
+[gd_scene load_steps=79 format=3 uid="uid://dombhxdvhmurw"]
+
+[ext_resource type="Texture2D" uid="uid://dqf0gth4jgp1g" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-leap/demon-swordsman-attack-leap1.png" id="1_crpi0"]
+[ext_resource type="Texture2D" uid="uid://cliif1e0dmrtu" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-landed/demon-swordsman-attack-landed1.png" id="1_mw44y"]
+[ext_resource type="Script" path="res://Scenes/knight.gd" id="1_uup76"]
+[ext_resource type="Texture2D" uid="uid://c1638xo5h6a1t" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-leap/demon-swordsman-attack-leap2.png" id="2_87wk4"]
+[ext_resource type="Texture2D" uid="uid://c78nw2ackpox" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-landed/demon-swordsman-attack-landed2.png" id="2_s6iv8"]
+[ext_resource type="Texture2D" uid="uid://onw7a86w6l28" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-landed/demon-swordsman-attack-landed3.png" id="3_mvnrp"]
+[ext_resource type="Texture2D" uid="uid://dvrm8of8mftt1" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-landed/demon-swordsman-attack-landed4.png" id="4_7tsu0"]
+[ext_resource type="Texture2D" uid="uid://b8u7nvxdya34u" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-landed/demon-swordsman-attack-landed5.png" id="5_g2m8v"]
+[ext_resource type="Texture2D" uid="uid://c7nsb8lodf3jh" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-attack-landed/demon-swordsman-attack-landed6.png" id="6_vlk4g"]
+[ext_resource type="Texture2D" uid="uid://bmg7xs24ajeah" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving1.png" id="7_0fdag"]
+[ext_resource type="Texture2D" uid="uid://86eeuulpx2ch" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving2.png" id="8_jormr"]
+[ext_resource type="Texture2D" uid="uid://dbis0qhhamsc8" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab1.png" id="9_c80xb"]
+[ext_resource type="Texture2D" uid="uid://bm6jrj51vj6me" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving3.png" id="9_im71s"]
+[ext_resource type="Texture2D" uid="uid://bwwjsb727lseh" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving4.png" id="10_fuqoo"]
+[ext_resource type="Texture2D" uid="uid://chd5168adan6k" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab2.png" id="10_tlvar"]
+[ext_resource type="Texture2D" uid="uid://caarqyurub4fp" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving5.png" id="11_nfmd7"]
+[ext_resource type="Texture2D" uid="uid://dt21tey7l1nac" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab3.png" id="11_rhmby"]
+[ext_resource type="Texture2D" uid="uid://dceye1g0e2y1h" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab4.png" id="12_6udgl"]
+[ext_resource type="Texture2D" uid="uid://cqtxcgo2a4qwt" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving6.png" id="12_s40fd"]
+[ext_resource type="Texture2D" uid="uid://doldfqx0ftlra" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving7.png" id="13_nqi24"]
+[ext_resource type="Texture2D" uid="uid://dvkg8yqgt6m8w" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab5.png" id="13_w7rxw"]
+[ext_resource type="Texture2D" uid="uid://bkk1ca64sd01s" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-moving/demon-swordsman-moving8.png" id="14_10ot6"]
+[ext_resource type="Texture2D" uid="uid://dduggkrvfd3lo" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab6.png" id="14_if044"]
+[ext_resource type="Texture2D" uid="uid://pu7risu4ig3w" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab7.png" id="15_do04k"]
+[ext_resource type="Texture2D" uid="uid://fmrada8w85ax" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab8.png" id="16_yjdj7"]
+[ext_resource type="Texture2D" uid="uid://br3t60h74pqbf" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab9.png" id="17_md12q"]
+[ext_resource type="Texture2D" uid="uid://wij5lo1gfge6" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab10.png" id="18_oc8e3"]
+[ext_resource type="Texture2D" uid="uid://bj8yw2y0sbwso" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab11.png" id="19_6wbow"]
+[ext_resource type="Texture2D" uid="uid://c6hdx42g4hery" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab12.png" id="20_j1f1a"]
+[ext_resource type="Texture2D" uid="uid://c3k078nin0sj1" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab13.png" id="21_gu20o"]
+[ext_resource type="Texture2D" uid="uid://748fcx0l02xy" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-charge-stab/demon-swordsman-charge-stab14.png" id="22_85uyk"]
+[ext_resource type="Texture2D" uid="uid://26l6fcvidv62" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-dead-grounded/demon-swordsman-dead-grounded1.png" id="23_tbkdr"]
+[ext_resource type="Texture2D" uid="uid://lqcgl11jcl8t" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-dead-grounded/demon-swordsman-dead-grounded2.png" id="24_afjbm"]
+[ext_resource type="Texture2D" uid="uid://b37gdmxw550uh" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-dead-grounded/demon-swordsman-dead-grounded3.png" id="25_jbnaf"]
+[ext_resource type="Texture2D" uid="uid://cyj350tos4icl" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-dead-grounded/demon-swordsman-dead-grounded4.png" id="26_d2602"]
+[ext_resource type="Texture2D" uid="uid://c2tdtotnqurll" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-dead-grounded/demon-swordsman-dead-grounded5.png" id="27_tukrn"]
+[ext_resource type="Texture2D" uid="uid://dqgkr6cpdpqxc" path="res://Characters/pixramen-valley-asset-pack-v2/demon-swordsman/png/3x/demon-swordsman-dead-grounded/demon-swordsman-dead-grounded6.png" id="28_btau8"]
+[ext_resource type="PackedScene" uid="uid://1kpcxwwo6a2r" path="res://Scenes/HealthBar.tscn" id="38_kl2rm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0wjyb"]
+atlas = ExtResource("1_crpi0")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_86qio"]
+atlas = ExtResource("2_87wk4")
+region = Rect2(0, 64, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqgd4"]
+atlas = ExtResource("1_mw44y")
+region = Rect2(0, 138, 192, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alx0r"]
+atlas = ExtResource("2_s6iv8")
+region = Rect2(0, 138, 192, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwydk"]
+atlas = ExtResource("3_mvnrp")
+region = Rect2(0, 138, 192, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1bb0"]
+atlas = ExtResource("4_7tsu0")
+region = Rect2(0, 138, 192, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yt8e2"]
+atlas = ExtResource("5_g2m8v")
+region = Rect2(0, 138, 192, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_57ga2"]
+atlas = ExtResource("6_vlk4g")
+region = Rect2(0, 138, 192, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2xlm5"]
+atlas = ExtResource("9_c80xb")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jacu7"]
+atlas = ExtResource("10_tlvar")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8j5uy"]
+atlas = ExtResource("11_rhmby")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhc33"]
+atlas = ExtResource("12_6udgl")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc15l"]
+atlas = ExtResource("13_w7rxw")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0dh8"]
+atlas = ExtResource("14_if044")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ltws"]
+atlas = ExtResource("15_do04k")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1owh"]
+atlas = ExtResource("16_yjdj7")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6gtke"]
+atlas = ExtResource("17_md12q")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6j5r"]
+atlas = ExtResource("18_oc8e3")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0stk"]
+atlas = ExtResource("19_6wbow")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4n6cy"]
+atlas = ExtResource("20_j1f1a")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h3yy"]
+atlas = ExtResource("21_gu20o")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqsms"]
+atlas = ExtResource("22_85uyk")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejeqv"]
+atlas = ExtResource("23_tbkdr")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g8wvl"]
+atlas = ExtResource("24_afjbm")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qeqmp"]
+atlas = ExtResource("25_jbnaf")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_isi32"]
+atlas = ExtResource("26_d2602")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j622u"]
+atlas = ExtResource("27_tukrn")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4pvns"]
+atlas = ExtResource("28_btau8")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkb4b"]
+atlas = ExtResource("7_0fdag")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkoxg"]
+atlas = ExtResource("8_jormr")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5hhbp"]
+atlas = ExtResource("9_im71s")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hbcfx"]
+atlas = ExtResource("10_fuqoo")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lolx"]
+atlas = ExtResource("11_nfmd7")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fsn3"]
+atlas = ExtResource("12_s40fd")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62v0p"]
+atlas = ExtResource("13_nqi24")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1hm7"]
+atlas = ExtResource("14_10ot6")
+region = Rect2(0, 128, 192, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sgryi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0wjyb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_86qio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rqgd4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alx0r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwydk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1bb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yt8e2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_57ga2")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2xlm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jacu7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8j5uy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fhc33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc15l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0dh8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ltws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1owh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6gtke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6j5r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0stk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4n6cy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h3yy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqsms")
+}],
+"loop": false,
+"name": &"Dash Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejeqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g8wvl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qeqmp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_isi32")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j622u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4pvns")
+}],
+"loop": true,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkb4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nkoxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5hhbp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hbcfx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2lolx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fsn3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62v0p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1hm7")
+}],
+"loop": false,
+"name": &"Run",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nyb61"]
+radius = 17.0
+height = 66.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wn4nw"]
+size = Vector2(95, 56)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4j33v"]
+radius = 17.0
+height = 66.0
+
+[node name="Knight" type="CharacterBody2D"]
+script = ExtResource("1_uup76")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, -8)
+scale = Vector2(1.03125, 1.25)
+sprite_frames = SubResource("SpriteFrames_sgryi")
+animation = &"Run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("CapsuleShape2D_nyb61")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="KnightDamageBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KnightDamageBox"]
+position = Vector2(6, -3)
+shape = SubResource("RectangleShape2D_wn4nw")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(5, -3)
+shape = SubResource("CapsuleShape2D_4j33v")
+
+[node name="ProgressBar" parent="." instance=ExtResource("38_kl2rm")]
+offset_left = -29.0
+offset_top = -64.0
+offset_right = 26.0
+offset_bottom = -50.0
+
+[connection signal="area_entered" from="KnightDamageBox" to="." method="_on_knight_damage_box_area_entered"]
+[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]

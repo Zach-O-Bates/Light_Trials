@@ -1,0 +1,201 @@
+[gd_scene load_steps=36 format=3 uid="uid://bwu7cudnx8v6q"]
+
+[ext_resource type="Script" path="res://Scripts/Bat.gd" id="1_xx458"]
+[ext_resource type="Script" path="res://area_2d.gd" id="2_6q36s"]
+[ext_resource type="Texture2D" uid="uid://ccpxrn3rdjnoc" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite1.png" id="2_eoq6o"]
+[ext_resource type="Texture2D" uid="uid://bkkw48y3rvffi" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite2.png" id="3_fq5l3"]
+[ext_resource type="Texture2D" uid="uid://yi1losigdbqg" path="res://Characters/pixramen-valley-asset-pack-v2/demon-heart/png/3x/demon-heart-red/demon-heart-red.png" id="3_w186t"]
+[ext_resource type="Texture2D" uid="uid://bj4ccq3p774ec" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite3.png" id="4_8ktmk"]
+[ext_resource type="Texture2D" uid="uid://otqtefmxrktn" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite4.png" id="5_4m6xi"]
+[ext_resource type="Texture2D" uid="uid://2f0jchsc0i8p" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite5.png" id="6_7bydi"]
+[ext_resource type="Texture2D" uid="uid://dpv4eev423o2f" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite6.png" id="7_w3edo"]
+[ext_resource type="Texture2D" uid="uid://dmem4m1qn7rhc" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite7.png" id="8_gyu8n"]
+[ext_resource type="Texture2D" uid="uid://88l3wxjbn2uf" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite8.png" id="9_8b5hr"]
+[ext_resource type="Texture2D" uid="uid://vcnh4s3hmfh6" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite9.png" id="10_bwbqm"]
+[ext_resource type="Texture2D" uid="uid://3tjos4omoi2q" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite10.png" id="11_301ss"]
+[ext_resource type="Texture2D" uid="uid://u5deqyk8yayy" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite11.png" id="12_a74h8"]
+[ext_resource type="Texture2D" uid="uid://bp2um5qqc8v0b" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite12.png" id="13_b2g1i"]
+[ext_resource type="Texture2D" uid="uid://bu8aua41bsnx4" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite13.png" id="14_yl5ut"]
+[ext_resource type="Texture2D" uid="uid://cldglpjfcl5he" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/2x/demon-bat-bite/demon-bat-bite14.png" id="15_f6cxv"]
+[ext_resource type="Texture2D" uid="uid://dvkkxs6kqw7vg" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-death/demon-bat-death1.png" id="16_jvhdd"]
+[ext_resource type="Texture2D" uid="uid://dp05qwebel2kf" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-death/demon-bat-death2.png" id="17_egq68"]
+[ext_resource type="Texture2D" uid="uid://bpd4q6a3me024" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-death/demon-bat-death3.png" id="18_qswj4"]
+[ext_resource type="Texture2D" uid="uid://d12sceottcc4l" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-death/demon-bat-death4.png" id="19_5p7g1"]
+[ext_resource type="Texture2D" uid="uid://dkhge8fonthxe" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-death/demon-bat-death5.png" id="20_168ms"]
+[ext_resource type="Texture2D" uid="uid://b7jp6hu2a77i5" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-death/demon-bat-death6.png" id="21_6wkb2"]
+[ext_resource type="Texture2D" uid="uid://cwb1723ejqytm" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-flying/demon-bat-flying1.png" id="22_6j5jb"]
+[ext_resource type="Texture2D" uid="uid://c4kr7wk2ket4a" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-flying/demon-bat-flying2.png" id="23_6af5k"]
+[ext_resource type="Texture2D" uid="uid://b3cps4j38nndi" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-flying/demon-bat-flying3.png" id="24_gevje"]
+[ext_resource type="Texture2D" uid="uid://4a4ah1ydfpr2" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-flying/demon-bat-flying4.png" id="25_gs2o1"]
+[ext_resource type="Texture2D" uid="uid://y220jbkd3udj" path="res://Characters/pixramen-valley-asset-pack-v2/demon-bat/png/3x/demon-bat-knockback/demon-bat-knockback.png" id="26_gcxw8"]
+[ext_resource type="PackedScene" uid="uid://1kpcxwwo6a2r" path="res://Scenes/HealthBar.tscn" id="27_kcy1p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q2d2a"]
+radius = 19.2094
+
+[sub_resource type="PackedScene" id="PackedScene_7ira4"]
+_bundled = {
+"conn_count": 1,
+"conns": PackedInt32Array(1, 1, 9, 8, 2, 0, 0),
+"editable_instances": [],
+"names": PackedStringArray("Heart", "Node2D", "Area2D", "script", "Sprite2D", "texture", "CollisionShape2D", "shape", "_on_area_entered", "area_entered"),
+"node_count": 4,
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 1, 0, -1, 0, 0, 0, 0, 2, 2, -1, 1, 3, 0, 0, 1, 0, 4, 4, -1, 1, 5, 1, 0, 1, 0, 6, 6, -1, 1, 7, 2, 0),
+"variants": [ExtResource("2_6q36s"), ExtResource("3_w186t"), SubResource("CircleShape2D_q2d2a")],
+"version": 3
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6ehnk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eoq6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fq5l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8ktmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4m6xi")
+}, {
+"duration": 0.7,
+"texture": ExtResource("6_7bydi")
+}, {
+"duration": 0.7,
+"texture": ExtResource("7_w3edo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gyu8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8b5hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bwbqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_301ss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_a74h8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_b2g1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yl5ut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_f6cxv")
+}],
+"loop": false,
+"name": &"Bite",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_jvhdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_egq68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qswj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5p7g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_168ms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_6wkb2")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_6j5jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_6af5k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_gevje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_gs2o1")
+}],
+"loop": true,
+"name": &"Fly",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_gcxw8")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": false,
+"name": &"Spit",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4hu5s"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ffvyt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6jthr"]
+radius = 7.0
+
+[node name="Bat" type="CharacterBody2D"]
+position = Vector2(78, 42)
+script = ExtResource("1_xx458")
+heart = SubResource("PackedScene_7ira4")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7.62939e-06, -7)
+scale = Vector2(0.395833, 0.364583)
+sprite_frames = SubResource("SpriteFrames_6ehnk")
+animation = &"Hurt"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_4hu5s")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="BatHitBox" type="Area2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BatHitBox"]
+position = Vector2(1, -1)
+shape = SubResource("CircleShape2D_ffvyt")
+
+[node name="BiteZone" type="Area2D" parent="."]
+position = Vector2(-54, -5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BiteZone"]
+position = Vector2(55, 6)
+shape = SubResource("CircleShape2D_6jthr")
+
+[node name="ProgressBar" parent="." instance=ExtResource("27_kcy1p")]
+offset_left = -6.0
+offset_top = -18.0
+offset_right = 8.0
+offset_bottom = -12.0
+max_value = 30.0
+value = 30.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="BatHitBox" to="." method="_on_bat_hit_box_area_entered"]
